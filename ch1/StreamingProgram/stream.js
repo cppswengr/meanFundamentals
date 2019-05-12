@@ -11,7 +11,11 @@ readableStream.on('data', function(data) {
     if (writableStream.write(data) === true) {
         console.log('Hey!, I am done writing.  Open the file writeTextFile.txt' +
             ' to see what has been written');
+        console.log();
+        console.log('Or just look below :)');
+        console.log('Data -->' + data)
     }
     else
         console.log('Writing is not successful');
 });
+
